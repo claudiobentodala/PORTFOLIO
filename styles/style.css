@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_main: purple;
+    --color_second: #270027;
+    --font_main: monospace;
+}
+
+body{
+    font-family: var(--font_main);
+    color: white;
+    background-color: var(--color_second);
+}
+
+header{
+    /*position: fixed; while*/
+    width: 100vw;
+    background-color: var(--color_main);
+}
+header > menu{
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+header > menu > h1{
+    text-transform: capitalize;
+    color: var(--color_second);
+}
+header > nav {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 0px;
+    background-color: darkred;
+    box-shadow: 0px 6px 7px var(--color_main);
+}
+header > nav >a{
+    padding: 10px 0px 10px 5px;
+}
+/*INTRODUÇÃO*/
+main{
+    margin-top: 30px;
+    padding: 0px 10px;
+}
+main > section#introducion > img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--color_main);
+    box-shadow:0px 0px 20px 8px var(--color_main);
+    border-radius: 50%;
+}
+main > section#introducion > article#text{
+    margin-top: 5px;
+    text-align: center;
+}
+main > section#introducion > article#social{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 5px;
+}
+main > section#introducion > article#social > a > img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0px;
+    border-radius: 50%;
+}
+main > section#introducion > a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 110px;
+    padding: 15px 0px;
+    border-radius: 35px;
+    line-height: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color_main);
+}
+main > section#about{
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: var(--color_main);
+}
+main > section#about > h2{
+    color: var(--color_second);
+    text-transform: uppercase;
+    text-align: center;
+}
+main > section#about > article#description{
+    margin-top: 5px;
+    padding: 5px;
+}
