@@ -86,15 +86,23 @@ main > section#introducion > a{
     color: white;
     background-color: var(--color_main);
 }
+
+/*ABOUT ME*/
 main > section#about{
     margin-top: 25px;
     border-radius: 20px;
     background-color: var(--color_main);
 }
-main > section#about > h2{
+main > section#about > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: auto;
     color: var(--color_second);
     text-transform: uppercase;
-    text-align: center;
+}
+main > section#about > div > span{
+    font-weight: bolder;
 }
 main > section#about > article#description{
     margin-top: 5px;
