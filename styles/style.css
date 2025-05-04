@@ -116,13 +116,13 @@ main > section#introducion > a{
     color: var(--color_second);
     background-color: var(--color_main);
 }
-/*ABOUT ME, SKILLS, PROJECTS*/
-main > section#about,section#skills,section#projects{
+/*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
+main > section#about,section#skills,section#projects,section#contact{
     margin-top: 25px;
     border-radius: 10px;
     background-color: var(--color_main);
 }
-main > section#about > div,section#skills > div,section#projects > div {
+main > section#about > div,section#skills > div,section#projects > div, section#contact > div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -130,7 +130,7 @@ main > section#about > div,section#skills > div,section#projects > div {
     color: var(--color_second);
     text-transform: uppercase;
 }
-main > section#about > div > span, section#skills > div > span,section#projects > div > span{
+main > section#about > div > span, section#skills > div > span,section#projects > div > span, section#contact > div > span{
     font-size: 12px;
     font-weight: 900;
 }
@@ -221,6 +221,22 @@ main > section#projects > article > a{
     text-decoration: none;
     color: var(--color_second);
     background-color: var(--color_ligth);
+}
+
+/*CONTACT*/
+main > section#contact > article{
+    width: 90%;
+    margin: auto;
+}
+main > section#contact > article > div{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+    margin-top: 5px;
+}
+main > section#contact > article > div > p{
+    color: var(--color_ligth);
+    font-size: 16px;
 }
 
 footer{
