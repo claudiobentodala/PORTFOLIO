@@ -11,7 +11,7 @@
     <header>
         <menu>
             <h1>claudio dala</h1>
-            <div>
+            <div onclick="menu()" id="itens">
                 <img src="image/icon/menu.png" id="menu"><img src="image/icon/close.png" id="close">
             </div>
         </menu>
@@ -22,7 +22,7 @@
             <a href="pages/contactme.html">contact me</a>
         </nav>
     </header>
-    <main>
+    <main onclick="out()">
         <section id="introducion">
             <img src="image/me.png" alt="claudio dala">
             <article id="text">
@@ -94,6 +94,7 @@
         </section>
     </main>
     <a  href="file/portfolio.pdf" download="file/portfolio.pdf" target="_blank" id="download"><img src="image//icon/download.png"></a>
-    <footer>claudio bento dala &copy; 2025</footer>
+    <footer onclick="out()">claudio bento dala &copy; 2025</footer>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
