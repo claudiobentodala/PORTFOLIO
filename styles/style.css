@@ -8,6 +8,7 @@
 :root{
     --color_main: purple;
     --color_second: #270027;
+    --color_third: #180018;
     --font_main: monospace;
 }
 
@@ -18,7 +19,8 @@ body{
 }
 
 header{
-    /*position: fixed; while*/
+    position: fixed;
+    top: 0%;
     width: 100vw;
     background-color: var(--color_main);
 }
@@ -29,22 +31,29 @@ header > menu{
     justify-content: space-between;
 }
 header > menu > h1{
-    text-transform: capitalize;
+    align-self: center;
+    font-size: 17px;
+    text-transform: uppercase;
     color: var(--color_second);
 }
 header > nav {
     display: flex;
     flex-flow: column wrap;
     padding: 10px 0px;
-    background-color: darkred;
-    box-shadow: 0px 6px 7px var(--color_main);
+    background-color: var(--color_third);
+    box-shadow: 0px 5px 5px 0px var(--color_main);
 }
 header > nav >a{
+    font-size: 17px;
+    color: var(--color_main);
     padding: 10px 0px 10px 5px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
+
 /*INTRODUÇÃO*/
 main{
-    margin-top: 30px;
+    margin-top: 500px;
     padding: 0px 10px;
 }
 main > section#introducion > img{
@@ -53,11 +62,19 @@ main > section#introducion > img{
     width: 300px;
     height: 300px;
     border: 2px solid var(--color_main);
-    box-shadow:0px 0px 20px 8px var(--color_main);
     border-radius: 50%;
+    animation: pain 700ms infinite;
+}
+@keyframes pain {
+    0%,100%{
+        box-shadow:0px 0px 20px 8px var(--color_main);
+    }
+    50%{
+        box-shadow:0px 0px 20px 6px var(--color_main);
+    }
 }
 main > section#introducion > article#text{
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
 }
 main > section#introducion > article#social{
@@ -82,8 +99,8 @@ main > section#introducion > a{
     line-height: 50%;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
-    color: white;
+    font-weight: bolder;
+    color: var(--color_second);
     background-color: var(--color_main);
 }
 
@@ -102,9 +119,24 @@ main > section#about > div {
     text-transform: uppercase;
 }
 main > section#about > div > span{
-    font-weight: bolder;
+    font-size: 12px;
+    font-weight: 900;
 }
 main > section#about > article#description{
     margin-top: 5px;
     padding: 5px;
+}
+a#download{
+    display: block;
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color_second);
+    box-shadow:0px 0px 20px 1px var(--color_main);
+}
+a#download > img{
+    transform: translate(50%,50%);
 }
