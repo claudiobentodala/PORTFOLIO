@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+:root{
+    --color_main: purple;
+    --color_second: #270027;
+    --color_third: #180018;
+    --color_fouth: #ea33f7;
+    --color_ligth: #fdbcfd;
+    --font_main: monospace;
+    --font_second: 'Arial Narrow', Arial, sans-serif;
+}
+
+/*INTRODUÇÃO*/
+main{
+    padding: 8em 10px 0px 10px
+}
+main > section#introducion > img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--color_main);
+    border-radius: 50%;
+    animation: pain 700ms infinite;
+}
+@keyframes pain {
+    0%,100%{
+        box-shadow:0px 0px 20px 8px var(--color_main);
+    }
+    50%{
+        box-shadow:0px 0px 20px 6px var(--color_main);
+    }
+}
+main > section#introducion > article#text{
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color_ligth);
+}
+main > section#introducion > article#text > h3 > span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+main > section#introducion > article#social{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 5px;
+}
+main > section#introducion > article#social > a > img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0px;
+    border-radius: 50%;
+}
+main > section#introducion > a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 120px;
+    padding: 15px 0px;
+    border-radius: 35px;
+    line-height: 50%;
+    font-weight: bolder;
+    color: var(--color_second);
+    background-color: var(--color_main);
+}
+
+/*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
+main > section#about,section#skills,section#projects,section#contact{
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: var(--color_main);
+}
+main > section#about > div,section#skills > div,section#projects > div, section#contact > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: auto;
+    color: var(--color_second);
+    text-transform: uppercase;
+}
+main > section#about > div > span, section#skills > div > span,section#projects > div > span, section#contact > div > span{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/*ABOUT ME*/
+main > section#about > article#description{
+    color: var(--color_ligth);
+    margin-top: 5px;
+    padding: 10px 5px;
+}
+main > section#about > article#description > p{
+    font-family: var(--font_second);
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/*SKILLS*/
+main > section#skills{
+    padding: 10px 0px 20px 0px;
+}
+main > section#skills > article{
+    margin: auto;
+    width: 85%;
+    padding: 25px 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: var(--color_third);
+    text-align: center;
+}
+main > section#skills > article > img{
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+main > section#skills > article > p{
+    font-size: 20px;
+    color: var(--color_fouth);
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+main > section#skills > article > a{
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: var(--color_second);
+    background-color: var(--color_fouth);
+}
+
+/*PROJECTS*/
+main > section#projects{
+    padding-bottom: 20px;
+}
+main > section#projects > article{
+    margin: auto;
+    padding: 20px 0px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: var(--color_second);
+    text-align: center;
+}
+main > section#projects > article > img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    border-radius: 5px;
+}
+main > section#projects > article > p{
+    color: var(--color_ligth);
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+main > section#projects > article > a{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 17px;
+    width: 100px;
+    border-radius: 20px;
+    color: var(--color_second);
+    background-color: var(--color_fouth);
+}
