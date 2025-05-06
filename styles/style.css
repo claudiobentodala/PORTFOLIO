@@ -33,7 +33,8 @@ header > menu{
     flex-flow: row wrap;
     justify-content: space-between;
 }
-header > menu > h1{
+header > menu > a{
+    text-decoration: none;
     align-self: center;
     font-size: 17px;
     color: var(--color_ligth);
@@ -116,7 +117,7 @@ main > section#introducion > a{
     display: block;
     margin: auto;
     text-align: center;
-    width: 110px;
+    max-width: 120px;
     padding: 15px 0px;
     border-radius: 35px;
     line-height: 50%;
@@ -126,6 +127,7 @@ main > section#introducion > a{
     color: var(--color_second);
     background-color: var(--color_main);
 }
+
 /*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
 main > section#about,section#skills,section#projects,section#contact{
     margin-top: 25px;
@@ -235,6 +237,7 @@ main > section#projects > article > a{
 
 
 footer{
+    text-transform: uppercase;
     text-align: center;
     color: var(--color_ligth);
     background-color: var(--color_main);
