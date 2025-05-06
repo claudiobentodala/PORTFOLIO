@@ -20,6 +20,9 @@ body{
     font-family: var(--font_main);
     background-color: var(--color_second);
 }
+a{
+    text-decoration: none;
+}
 
 header{
     position: fixed;
@@ -34,7 +37,6 @@ header > menu{
     justify-content: space-between;
 }
 header > menu > a{
-    text-decoration: none;
     align-self: center;
     font-size: 17px;
     color: var(--color_ligth);
@@ -61,8 +63,6 @@ header > nav > a{
     font-size: 17px;
     color: var(--color_ligth);
     padding: 10px 0px 10px 5px;
-    text-transform: uppercase;
-    text-decoration: none;
     width: 40%;
     text-align: center;
 }
@@ -121,8 +121,6 @@ main > section#introducion > a{
     padding: 15px 0px;
     border-radius: 35px;
     line-height: 50%;
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: bolder;
     color: var(--color_second);
     background-color: var(--color_main);
@@ -181,18 +179,14 @@ main > section#skills > article > img{
 }
 main > section#skills > article > p{
     font-size: 20px;
-    color: var(--color_ligth);
+    color: var(--color_fouth);
     font-weight: bold;
+    margin-bottom: 10%;
 }
 main > section#skills > article > a{
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    padding: 15px 5px;
-    font-size: 15px;
-    width: 100px;
+    padding: 12px;
     border-radius: 20px;
-    text-decoration: none;
+    font-size: 17px;
     color: var(--color_second);
     background-color: var(--color_fouth);
 }
@@ -226,11 +220,10 @@ main > section#projects > article > a{
     display: block;
     margin: auto;
     margin-top: 10px;
-    padding: 15px 5px;
-    font-size: 15px;
+    padding: 12px;
+    font-size: 17px;
     width: 100px;
     border-radius: 20px;
-    text-decoration: none;
     color: var(--color_second);
     background-color: var(--color_fouth);
 }
