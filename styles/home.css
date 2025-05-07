@@ -55,14 +55,18 @@ main > section#introducion > article#social > a > img{
 main > section#introducion > a{
     display: block;
     margin: auto;
-    text-align: center;
     max-width: 120px;
     padding: 15px 0px;
     border-radius: 35px;
     line-height: 50%;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: bolder;
     color: var(--color_second);
     background-color: var(--color_main);
+}
+main > section#introducion > a > p{
+    display: inline;
 }
 
 /*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
@@ -161,7 +165,7 @@ main > section#projects > article > a{
     margin-top: 10px;
     padding: 12px;
     font-size: 17px;
-    width: 100px;
+    width: 120px;
     border-radius: 20px;
     color: var(--color_second);
     background-color: var(--color_fouth);
