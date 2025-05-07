@@ -73,12 +73,13 @@ header > nav > hr{
 
 /*FOOTER*/
 footer{
-    text-transform: uppercase;
+    font-family: var(--font_main);
     text-align: center;
     color: var(--color_ligth);
     background-color: var(--color_main);
+    text-transform: uppercase;
 }
-/*CONTACT*/
+/* FOOTER CONTACT*/
 footer > section#contact{
     margin-bottom: 10px;
 }
