@@ -90,16 +90,8 @@ main > section#about > div > span, section#skills > div > span,section#projects 
 
 /*ABOUT ME*/
 main > section#about > article#description{
-    color: var(--color_ligth);
-    margin-top: 5px;
+    margin-top: -20px;
     padding: 10px 5px;
-}
-main > section#about > article#description > p{
-    font-family: var(--font_second);
-    text-align: justify;
-    font-weight: lighter;
-    font-size: 18px;
-    margin-top: 10px;
 }
 
 /*SKILLS*/

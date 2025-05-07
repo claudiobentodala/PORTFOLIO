@@ -70,6 +70,15 @@ header > nav > hr{
     transform: translate(52%,-5px);
     width: 20%;
 }
+/* ALL DESCRIPTION TEXT*/
+p.letter{
+    margin-top: 10px;
+    font-family: var(--font_second);
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 25px;
+}
 
 /*FOOTER*/
 footer{
