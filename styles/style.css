@@ -57,7 +57,6 @@ header > nav {
     padding: 10px 0px;
     background-color: var(--color_third);
     box-shadow: 0px 5px 5px 0px var(--color_main);
-    transition: .8s;
 }
 header > nav > a{
     font-size: 17px;
