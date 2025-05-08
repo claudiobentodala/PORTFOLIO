@@ -93,15 +93,19 @@ main > section#about > article#description{
     margin-top: -20px;
     padding: 10px 5px;
 }
+main > section#about > article#more_content{
+    display: none;
+    padding: 10px 5px;
+}
 main > section#about > div#show{
-    display: block;
-    margin: auto;
     width: 100%;
     height: 35px;
-    padding: 0px -100px;
-    text-align: center;
 }
-main > section#about > article#more{
+main > section#about > div#show > img{
+    display: block;
+    margin: auto;
+}
+main > section#about > div#show > img#hide{
     display: none;
 }
 
