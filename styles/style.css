@@ -48,8 +48,7 @@ header > menu > div{
     display: block;
 }
 header > menu > div > img#close{
-    display: none;
-    
+    display: none;   
 }
 header > nav {
     display: none;
