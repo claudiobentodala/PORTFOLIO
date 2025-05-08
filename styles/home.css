@@ -93,12 +93,15 @@ main > section#about > article#description{
     margin-top: -20px;
     padding: 10px 5px;
 }
-main > section#about > article#description > div#show{
+main > section#about > div#show{
+    display: block;
+    margin: auto;
     width: 100%;
-    height: 20px;
-    background-color: red;
+    height: 35px;
+    padding: 0px -100px;
+    text-align: center;
 }
-main > section#about > article#description > article#more{
+main > section#about > article#more{
     display: none;
 }
 
