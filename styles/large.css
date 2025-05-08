@@ -51,7 +51,7 @@ header > nav > hr{
 main{
     display: block;
     margin: auto;
-    width:80%;
+    width:65%;
 }
 main > section#introducion{
     display: flex;
@@ -61,6 +61,7 @@ main > section#introducion{
 main > section#introducion > section{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
 }
 main > section#introducion article#social > a > img{
@@ -75,5 +76,14 @@ main > section#introducion > img{
     margin: 0;
 }
 main > section#introducion > section > a{
-    padding: 23px 17px;
+    align-content: center;
+    padding: 17px;
+    margin: 0;
+    transition: .8s;
+}
+main > section#introducion > section > a:hover{
+    transform: translate(5px);
+}
+p.letter{
+    padding: 0 70px;
 }

@@ -77,6 +77,13 @@ p.letter{
     font-size: 18px;
     line-height: 25px;
 }
+/*PROJECT AND SKILLS*/
+main > section#text{
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--color_main);
+}
 
 /*FOOTER*/
 footer{
