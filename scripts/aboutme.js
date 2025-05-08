@@ -1,14 +1,16 @@
-let content = window.document.querySelector('article#more_content')
-let hider = window.document.querySelector('img#hide')
-let more = window.document.querySelector('img#more')
+let element = {
+    content: window.document.querySelector('article#more_content'),
+    hider: window.document.querySelector('img#hide'),
+    more: window.document.querySelector('img#more')
+}
 function hide() {
-    if (content.style.display == 'none') {
-        content.style.display = 'block'
-        hider.style.display = 'block'
-        more.style.display = 'none'
+    if (element.content.style.display == 'none') {
+        element.content.style.display = 'block'
+        element.hider.style.display = 'block'
+        element.more.style.display = 'none'
     } else {
-        content.style.display = 'none'
-        hider.style.display = 'none'
-        more.style.display = 'block'
+        element.content.style.display = 'none'
+        element.hider.style.display = 'none'
+        element.more.style.display = 'block'
     }
 }

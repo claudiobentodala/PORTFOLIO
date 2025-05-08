@@ -1,4 +1,4 @@
-var elements = {
+let elements = {
     menu: window.document.querySelector('img#menu'),
     close: window.document.querySelector('img#close'),
     nav: window.document.querySelector('nav'),
