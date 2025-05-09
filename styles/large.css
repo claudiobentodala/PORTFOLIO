@@ -31,6 +31,7 @@ header > nav {
     background: transparent;
 }
 header > nav > a{
+    text-transform: uppercase;
     padding: 6px 0px 0px 0px;
     transition: .5s;
     width: 100px;
