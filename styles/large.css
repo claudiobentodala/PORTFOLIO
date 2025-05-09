@@ -13,37 +13,35 @@
 /*HEADER*/
 header{
     display: flex;
+    flex: row wrap;
     justify-content: space-between;
+}
+header > menu{
+    align-self: center;
+    display: block;
 }
 header > menu > div{
     display: none;
 }
 header > nav {
-    border: 3px dotted blank;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
-    width: 75%;
     box-shadow: 0px 0px 0px transparent;
+    margin-right: 25px;
     background: transparent;
-    margin-right: 20px;
 }
 header > nav > a{
-    display: flex;
-    flex-flow: row wrap;
-    width: 110px;
-    padding: 5px;
-    flex: 0 0 auto;
-    margin-right: 5px;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    color: var(--color_ligth);
-    background-color: var(--color_second);
+    padding: 6px 0px 0px 0px;
     transition: .5s;
+    width: 100px;
+    height: 35px;
+    margin: 0 10px 0 0;
+    border-bottom: 0;
+    border-radius: 10px;
+    background-color: var(--color_second);
 }
 header > nav > a:hover{
-    background-color: transparent;
-    border: 2px solid var(--color_second);
+    color: var(--color_main);
     transform: translate(5px);
 }
 
