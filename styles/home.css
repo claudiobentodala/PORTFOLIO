@@ -14,21 +14,35 @@
 main{
     padding: 8em 10px 0px 10px
 }
+main > section#introducion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+main > section#introducion > section{
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 main > section#introducion > img{
     display: block;
     margin: auto;
-    width: 300px;
-    height: 300px;
+    height: 280px;width: 280px;
     border: 2px solid var(--color_main);
     border-radius: 50%;
-    animation: pain 700ms infinite;
+    animation: pain 1500ms infinite;
 }
 @keyframes pain {
     0%,100%{
         box-shadow:0px 0px 20px 8px var(--color_main);
     }
     50%{
-        box-shadow:0px 0px 20px 6px var(--color_main);
+        box-shadow:0px 0px 20px 5px var(--color_main);
+    }
+    75%{
+        box-shadow:0px 0px 20px 7px var(--color_main);
     }
 }
 main > section#introducion  article#text{
@@ -53,10 +67,10 @@ main > section#introducion article#social > a > img{
     border-radius: 50%;
 }
 main > section#introducion > section >  a{
-    display: block;
+    align-content: center;
     margin: auto;
+    padding: 17px;
     max-width: 120px;
-    padding: 15px 0px;
     border-radius: 35px;
     line-height: 50%;
     text-align: center;

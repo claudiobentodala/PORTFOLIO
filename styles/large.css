@@ -10,6 +10,7 @@
     --font_second: 'Arial Narrow', Arial, sans-serif;
 }
 
+/*HEADER*/
 header{
     display: flex;
     justify-content: space-between;
@@ -30,13 +31,13 @@ header > nav > a{
     display: flex;
     flex-flow: row wrap;
     width: 15%;
-    padding: 10px;
+    padding: 8px;
     flex: 0 0 auto;
     margin-right: 15px;
     border-radius: 20px;
+    border: 2px solid transparent;
     color: var(--color_ligth);
     background-color: var(--color_second);
-    border: 2px solid transparent;
     transition: .5s;
 }
 header > nav > a:hover{
@@ -48,22 +49,14 @@ header > nav > hr{
     display: none;
 }
 
+/*MAIN CONTENT*/
 main{
     display: block;
     margin: auto;
     width:65%;
 }
-main > section#introducion{
-    display: flex;
-    flex-flow: row-reverse wrap-reverse;
-    justify-content: space-evenly;
-}
-main > section#introducion > section{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
+
+/*INTRODUCION*/
 main > section#introducion article#social > a > img{
     margin: 5px 0px;
     border-radius: 50%;
@@ -76,7 +69,6 @@ main > section#introducion > img{
     margin: 0;
 }
 main > section#introducion > section > a{
-    align-content: center;
     padding: 17px;
     margin: 0;
     transition: .8s;
@@ -84,6 +76,21 @@ main > section#introducion > section > a{
 main > section#introducion > section > a:hover{
     transform: translate(5px);
 }
+main > section#introducion article#social > a > img{
+    transition: .5s;
+}
+main > section#introducion article#social > a > img:hover{
+    transform: translate(3px);
+    border: 2px solid var(--color_ligth);
+}
+
+/*ALL LETTER*/
 p.letter{
-    padding: 0 70px;
+    padding: 0 5px;
+}
+
+/*DOWNLOAD*/
+a#download{
+    top: 90%;
+    left: 90%;
 }
