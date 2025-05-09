@@ -46,15 +46,11 @@ header > nav > a:hover{
     border: 2px solid var(--color_second);
     transform: translate(5px);
 }
-header > nav > hr{
-    display: none;
-}
 
 /*MAIN CONTENT*/
 main{
-    display: block;
     margin: auto;
-    width: 70%;
+    max-width: 900px;
 }
 
 /*INTRODUCION*/
@@ -83,19 +79,6 @@ main > section#introducion article#social > a > img{
 main > section#introducion article#social > a > img:hover{
     transform: translate(3px);
     border: 2px solid var(--color_ligth);
-}
-
-/*SKILLS*/
-main > section#skills > section.table{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-main > section#skills > section.table > article{
-    width: 24%;
-}
-main > section#skills > section.table > article > img{
-    width: 17em;
-    height: 13em;
 }
 
 /*PROJECTS*/

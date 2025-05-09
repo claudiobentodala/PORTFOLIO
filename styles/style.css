@@ -70,6 +70,8 @@ header > nav > hr{
     transform: translate(52%,-5px);
     width: 20%;
 }
+
+
 /* ALL DESCRIPTION TEXT*/
 p.letter{
     margin-top: 10px;
@@ -81,34 +83,40 @@ p.letter{
 }
 /*PROJECT AND SKILLS*/
 main > section#text{
-    margin: 10px 0px;
     padding: 5px;
+    margin: 15px;
     border-radius: 15px;
-    background-color: var(--color_main);
+    background: transparent;
+    animation: ligth 1.2s infinite;
 }
+@keyframes  ligth{
+    0%,100%{
+        box-shadow: 0px 0px 10px 0px var(--color_ligth);
+    }
+    50%{
+        box-shadow: 0px 0px 6px 0px var(--color_ligth);
+    }
+}
+
 /**/
-section.table{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    padding: 0 10px;
+main > section{
+    background: transparent;
 }
 section.table > article{
-    background-color: var(--color_second);
+    padding: 15px;
     margin-bottom: 10px;
     border-radius: 15px;
-    padding: 15px;
+    background-color: var(--color_main);
 }
 section.table > article > a{
     margin: auto;
     display: block;
-    margin-top: 5px;
-    background-color: var(--color_main);
-    color: var(--color_second);
     padding: 8px 5px;
-    border-radius: 15px;
     width: 100px;
+    margin-top: 5px;
+    border-radius: 15px;
+    color: var(--color_second);
+    background-color: var(--color_main);
     transition: .5s;
 }
 section.table > article > a:hover{
@@ -146,6 +154,22 @@ footer > p{
     font-size: 17px;
 }
 
+/*LIGTH*/
+main > section#skills > section.table > article,main > section#about > section,main > section#projects > section.table > article{
+    animation: ligth 1.2s infinite;
+    background-color: transparent;
+}
+@keyframes pain {
+    0%,100%{
+        box-shadow:0px 0px 20px 8px var(--color_main);
+    }
+    50%{
+        box-shadow:0px 0px 20px 5px var(--color_main);
+    }
+    75%{
+        box-shadow:0px 0px 20px 7px var(--color_main);
+    }
+}
 /*DOWNLOAD*/
 a#download{
     display: block;

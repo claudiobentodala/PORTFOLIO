@@ -6,13 +6,12 @@
     --color_third: #180018;
     --color_fouth: #ea33f7;
     --color_ligth: #fdbcfd;
-    --font_main: monospace;
     --font_second: 'Arial Narrow', Arial, sans-serif;
 }
 
 /*INTRODUÇÃO*/
 main{
-    padding: 8em 10px 0px 10px
+    padding-top: 8em;
 }
 main > section#introducion{
     display: flex;
@@ -32,18 +31,7 @@ main > section#introducion > img{
     height: 280px;width: 280px;
     border: 2px solid var(--color_main);
     border-radius: 50%;
-    animation: pain 1500ms infinite;
-}
-@keyframes pain {
-    0%,100%{
-        box-shadow:0px 0px 20px 8px var(--color_main);
-    }
-    50%{
-        box-shadow:0px 0px 20px 5px var(--color_main);
-    }
-    75%{
-        box-shadow:0px 0px 20px 7px var(--color_main);
-    }
+    animation: pain 1.5s infinite;
 }
 main > section#introducion  article#text{
     margin-top: 10px;
@@ -84,52 +72,75 @@ main > section#introducion  a > p{
 }
 
 /*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
-main > section#about,section#skills,section#projects,section#contact{
+main > section#about,section#skills,section#projects,section#contact,main > section#about > section{
     margin-top: 25px;
     border-radius: 10px;
-    background-color: var(--color_main);
 }
-main > section#about > div,section#skills > div,section#projects > div, section#contact > div {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: auto;
-    color: var(--color_second);
+main > section#about > h2,section#skills > h2,section#projects > h2, section#contact > h2 {
+    margin-bottom: 15px;
+    text-align: center;
     text-transform: uppercase;
-}
-main > section#about > div > span, section#skills > div > span,section#projects > div > span, section#contact > div > span{
-    font-size: 12px;
-    font-weight: 900;
+    color: var(--color_main);
 }
 
 /*ABOUT ME*/
-main > section#about > article#description{
-    margin-top: -20px;
-    padding: 10px 5px;
+main > section#about > section{
+    padding: 15px;
 }
-main > section#about > article#more_content{
+main > section#about > section > article#more_content{
     display: none;
-    padding: 10px 5px;
 }
-main > section#about > div#show{
+
+main > section#about > section > div#show{
     width: 100%;
     height: 35px;
 }
-main > section#about > div#show > img{
+main > section#about > section > div#show > img{
     display: block;
     margin: auto;
 }
-main > section#about > div#show > img#hide{
+main > section#about > section > div#show > img#hide{
     display: none;
 }
+
+/*SKILLS*/
+main > section#skills{
+    background: transparent;
+}
+main > section#skills > section.table{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+}
 main > section#skills > section.table > article{
-    width: 93%;
+    width: 280px;
+    cursor: pointer;
+}
+@keyframes  ligth{
+    0%,100%{
+        box-shadow: 0px 0px 10px 0px var(--color_ligth);
+    }
+    50%{
+        box-shadow: 0px 0px 6px 0px var(--color_ligth);
+    }
 }
 main > section#skills > section.table > article > img{
     display: block;
     margin: auto;
-    width: 100%;
-    height: 142px;
+    width: 40px;
+    height: 38px;
+}
+main > section#skills > section.table > article > h3{
+    font-size: 20px;
+    text-align: center;
+}
+main > section#skills > section.table > article > p{
+    font-family: var(--font_second);
+}
+main > section#skills > section.table > article > a{
+    background-color: var(--color_main);
+    color: var(--color_second);
 }
 main > section#skills > section.table > article > p{color: var(--color_ligth);}
 main > section#skills > section.table > article > p,a{
@@ -138,14 +149,19 @@ main > section#skills > section.table > article > p,a{
 }
 
 /*PROJECTS*/
+main > section#projects{
+    background: transparent;
+}
 main > section#projects > section.table > article{
     width: 95%;
+    margin: auto;
 }
-main > section#projects > section.table > article > p{
+main > section#projects > section.table > article > h3{
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
-    margin-bottom: 8px;
 }
 main > section#projects > section.table > article > img{
     display: block;
