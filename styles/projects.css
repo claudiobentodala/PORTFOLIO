@@ -11,12 +11,12 @@
 }
 
 header{
-    padding: 12px 5px;
+    padding: 12px;
 }
 
 main{
     margin: auto;
-    width: 95%;
+    max-width: 70em;
     margin-top: 65px;
     margin-bottom: 10px;
 }

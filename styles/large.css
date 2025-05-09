@@ -92,6 +92,17 @@ main > section#skills > section.table > article{
     width: 25%;
 }
 
+/*PROJECTS*/
+main > section#projects > section.table > article{
+    width: 70%;
+}
+main > section#projects > section.table > article > img{
+    display: block;
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
+}
+
 /*ALL LETTER*/
 p.letter{
     padding: 0 5px;

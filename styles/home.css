@@ -122,19 +122,7 @@ main > section#about > div#show > img{
 main > section#about > div#show > img#hide{
     display: none;
 }
-/*SKILLS*/
-main > section#skills > section.table{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    padding: 0 10px;
-}
 main > section#skills > section.table > article{
-    background-color: var(--color_second);
-    margin-bottom: 10px;
-    border-radius: 15px;
-    padding: 15px;
     width: 93%;
 }
 main > section#skills > section.table > article > img{
@@ -148,13 +136,20 @@ main > section#skills > section.table > article > p,a{
     font-size: 17px;
     text-align: center;
 }
-main > section#skills > section.table > article > a{
-    margin: auto;
+
+/*PROJECTS*/
+main > section#projects > section.table > article{
+    width: 95%;
+}
+main > section#projects > section.table > article > p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+main > section#projects > section.table > article > img{
     display: block;
-    margin-top: 5px;
-    background-color: var(--color_main);
-    color: var(--color_second);
-    padding: 8px 5px;
-    border-radius: 15px;
-    width: 100px;
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
 }

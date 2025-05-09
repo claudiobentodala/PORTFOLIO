@@ -86,6 +86,30 @@ main > section#text{
     border-radius: 15px;
     background-color: var(--color_main);
 }
+/**/
+section.table{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 0 10px;
+}
+section.table > article{
+    background-color: var(--color_second);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 15px;
+}
+section.table > article > a{
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+    background-color: var(--color_main);
+    color: var(--color_second);
+    padding: 8px 5px;
+    border-radius: 15px;
+    width: 100px;
+}
 
 /*FOOTER*/
 footer{
@@ -130,5 +154,5 @@ a#download{
     box-shadow:0px 0px 20px 1px var(--color_main);
 }
 a#download > img{
-    transform: translate(0%,50%);
+    transform: translate(50%,50%);
 }
