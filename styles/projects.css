@@ -46,3 +46,9 @@ main > a{
     color: var(--color_ligth);
     background-color: var(--color_main);
 }
+
+/*DOWNLOAD*/
+a#download{
+    top: 90%;
+    left: 90%;
+}

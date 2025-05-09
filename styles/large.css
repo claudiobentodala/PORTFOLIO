@@ -19,21 +19,22 @@ header > menu > div{
     display: none;
 }
 header > nav {
+    border: 3px dotted blank;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    width: 60%;
-    background-color: transparent;
+    width: 75%;
     box-shadow: 0px 0px 0px transparent;
-    margin-right: 10px;
+    background: transparent;
+    margin-right: 20px;
 }
 header > nav > a{
     display: flex;
     flex-flow: row wrap;
-    width: 15%;
-    padding: 8px;
+    width: 110px;
+    padding: 5px;
     flex: 0 0 auto;
-    margin-right: 15px;
+    margin-right: 5px;
     border-radius: 20px;
     border: 2px solid transparent;
     color: var(--color_ligth);
@@ -86,10 +87,15 @@ main > section#introducion article#social > a > img:hover{
 
 /*SKILLS*/
 main > section#skills > section.table{
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 main > section#skills > section.table > article{
-    width: 25%;
+    width: 24%;
+}
+main > section#skills > section.table > article > img{
+    width: 17em;
+    height: 13em;
 }
 
 /*PROJECTS*/
