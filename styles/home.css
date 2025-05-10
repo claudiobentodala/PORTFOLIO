@@ -84,8 +84,13 @@ main > section#about > h2,section#skills > h2,section#projects > h2, section#con
 }
 
 /*ABOUT ME*/
+main > section#about{
+    color: var(--color_ligth);
+}
 main > section#about > section{
     padding: 15px;
+    background: var(--color_main);
+    animation: pain 1.2s infinite;
 }
 main > section#about > section > article#more_content{
     display: none;
@@ -116,14 +121,6 @@ main > section#skills > section.table{
 main > section#skills > section.table > article{
     width: 280px;
     cursor: pointer;
-}
-@keyframes  ligth{
-    0%,100%{
-        box-shadow: 0px 0px 10px 0px var(--color_ligth);
-    }
-    50%{
-        box-shadow: 0px 0px 6px 0px var(--color_ligth);
-    }
 }
 main > section#skills > section.table > article > img{
     display: block;

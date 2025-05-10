@@ -149,7 +149,7 @@ footer > p{
 }
 
 /*LIGTH*/
-main > section#skills > section.table > article,main > section#about > section,main > section#projects > section.table > article{
+main > section#skills > section.table > article,main > section#projects > section.table > article{
     animation: ligth 1.2s infinite;
     background-color: transparent;
 }
