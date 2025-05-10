@@ -115,13 +115,12 @@ main > section#text{
 main > section{
     background: transparent;
 }
-section.table > article{
+section.table > article,article#more_skills > article,article#more_projects > article{
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 15px;
-    background-color: var(--color_main);
 }
-section.table > article > a{
+article > a.link_section{
     margin: auto;
     display: block;
     padding: 8px 5px;
@@ -132,10 +131,9 @@ section.table > article > a{
     background-color: var(--color_second);
     transition: .5s;
 }
-section.table > article > a:hover{
+article > a.link_section:hover{
     transform: translate(3px);
 }
-
 
 /*LIGTH*/
 @keyframes  ligth{

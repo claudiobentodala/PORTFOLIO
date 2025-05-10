@@ -84,51 +84,55 @@ main > section#about > section{
 }
 
 /*SKILLS*/
-main > section#skills{
+main > section#skills,article#more_skills{
     background: transparent;
 }
-main > section#skills > section.table{
+main > section#skills > section.table,article#more_skills{
     display: flex;
     flex-flow: row wrap;
     row-gap: 20px;
     justify-content: space-evenly;
 }
-main > section#skills > section.table > article{
+main > section#skills > section.table > article,article#more_skills > article{
     animation: ligth 1.2s infinite;
     background-color: transparent;
     width: 280px;
     cursor: pointer;
 }
-main > section#skills > section.table > article > img{
+main > section#skills > section.table > article > img,article#more_skills > article > img{
     display: block;
     margin: auto;
 }
-main > section#skills > section.table > article > h3{
+main > section#skills > section.table > article > h3,article#more_skills > article > h3{
     font-size: 20px;
     text-align: center;
 }
-main > section#skills > section.table > article > p{
+main > section#skills > section.table > article > p,article#more_skills > article > p{
     font-family: var(--font_second);
+    color: var(--color_ligth);
 }
-main > section#skills > section.table > article > a{
+main > section#skills > section.table > article > a,article#more_skills > article > a{
     background-color: var(--color_main);
     color: var(--color_second);
 }
-main > section#skills > section.table > article > p{color: var(--color_ligth);}
-main > section#skills > section.table > article > p,a{
+main > section#skills > section.table > article > p,main > section#skills > section.table > article > a,article#more_skills > article > a,article#more_skills > article > p{
     font-size: 17px;
     text-align: center;
 }
 
 /*PROJECTS*/
-main > section#projects > section.table > article{
-    width: 95%;
+main > section#projects > section.table,article#more_projects{
+    display: flex;
+    flex-flow: row wrap;
+}
+main > section#projects section.table >  article,article#more_projects > article{
+    width: 400px;
     margin: auto;
     background: var(--color_main);
     animation: pain 1.2s infinite;
     margin-bottom: 30px;
 }
-main > section#projects > section.table > article > h3{
+main > section#projects section.table > article > h3,article#more_projects > article > h3{
     margin-bottom: 8px;
     color: var(--color_ligth);
     font-size: 20px;
@@ -136,9 +140,12 @@ main > section#projects > section.table > article > h3{
     text-align: center;
     text-transform: uppercase;
 }
-main > section#projects > section.table > article > img{
+main > section#projects section.table > article > img,article#more_projects > article > img{
     display: block;
     margin: auto;
     width: 95%;
     border-radius: 5px;
+}
+main > section#projects section.table > article > a,article#more_projects > article > a{
+    text-align: center;
 }

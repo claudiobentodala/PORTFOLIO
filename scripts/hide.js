@@ -13,7 +13,7 @@ function hide(section) {
     }
 
     if (element.content.style.display == 'none') {
-        element.content.style.display = 'block'
+        element.content.style.display = 'flex'
         element.hider.style.display = 'block'
         element.more.style.display = 'none'
     } else {
