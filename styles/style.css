@@ -162,6 +162,7 @@ a#download > img{
 }
 /*FOOTER*/
 footer{
+    padding-top: 15px;
     margin-top: 35px;
     font-family: var(--font_main);
     text-align: center;
