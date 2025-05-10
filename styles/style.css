@@ -117,36 +117,6 @@ section.table > article > a:hover{
     transform: translate(3px);
 }
 
-/*FOOTER*/
-footer{
-    font-family: var(--font_main);
-    text-align: center;
-    color: var(--color_ligth);
-    background-color: var(--color_main);
-    text-transform: uppercase;
-}
-/* FOOTER CONTACT*/
-footer > section#contact{
-    margin-bottom: 10px;
-}
-footer > section#contact > article{
-    width: 90%;
-    margin: auto;
-}
-footer > section#contact > article > div{
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 10px;
-}
-footer > section#contact > article > div > p{
-    color: var(--color_ligth);
-    font-size: 15px;
-    font-weight: bold;
-    font-family: var(--font_second);
-}
-footer > p{
-    font-size: 17px;
-}
 
 /*LIGTH*/
 main > section#skills > section.table > article,main > section#projects > section.table > article{
@@ -178,4 +148,35 @@ a#download{
 }
 a#download > img{
     transform: translate(50%,50%);
+}
+/*FOOTER*/
+footer{
+    margin-top: 35px;
+    font-family: var(--font_main);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color_ligth);
+    background-color: var(--color_main);
+}
+/* FOOTER CONTACT*/
+footer > section#contact{
+    margin-bottom: 10px;
+}
+footer > section#contact > article{
+    width: 90%;
+    margin: auto;
+}
+footer > section#contact > article > div{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+}
+footer > section#contact > article > div > p{
+    color: var(--color_ligth);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--font_second);
+}
+footer > p{
+    font-size: 17px;
 }
