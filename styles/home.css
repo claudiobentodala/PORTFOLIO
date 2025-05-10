@@ -82,21 +82,6 @@ main > section#about > section{
     background: var(--color_main);
     animation: pain 1.2s infinite;
 }
-main > section#about > section > article#more_content{
-    display: none;
-}
-
-main > section#about > section > div#show{
-    width: 100%;
-    height: 35px;
-}
-main > section#about > section > div#show > img{
-    display: block;
-    margin: auto;
-}
-main > section#about > section > div#show > img#hide{
-    display: none;
-}
 
 /*SKILLS*/
 main > section#skills{
@@ -141,6 +126,7 @@ main > section#projects > section.table > article{
     margin: auto;
     background: var(--color_main);
     animation: pain 1.2s infinite;
+    margin-bottom: 30px;
 }
 main > section#projects > section.table > article > h3{
     margin-bottom: 8px;

@@ -51,7 +51,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia ut animi voluptatibus maiores et aliquid neque, eveniet aspernatur enim sint, voluptate nam sed commodi quos id rem aperiam ab.
                     </p>
                 </article>
-                <article id="more_content">
+                <article class="more_content" id="more_about">
                     <p class="letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo animi rem facilis tempora, mollitia dolores delectus beatae dolorum ducimus, corporis ab corrupti voluptates aperiam fugiat nobis dolorem nemo! Quibusdam, obcaecati.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia ut animi voluptatibus maiores et aliquid neque, eveniet aspernatur enim sint, voluptate nam sed commodi quos id rem aperiam ab.
                     </p>
@@ -62,7 +62,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia ut animi voluptatibus maiores et aliquid neque, eveniet aspernatur enim sint, voluptate nam sed commodi quos id rem aperiam ab.
                     </p>
                 </article>
-                <div id="show" onclick="hide()">
+                <div class="show" onclick="hide(1)">
                     <img src="image/icon/more.png" id="more">
                     <img src="image/icon/hide.png" id="hide">
                 </div>
@@ -70,28 +70,40 @@
         </section>
         <section id="skills">
         <h2>skills</h2>
-            <section class="table">
-                <article>
-                    <img src="image/icon/code.png">
-                    <h3>web development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
-                    <a href="pages/skills/webdevelopment.html">lern more</a>
-                </article>
-                <article>
-                    <img src="image/icon/language.png">
-                    <h3>languages</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
-                    <a href="pages/skills/language.html">lern more</a>
-                </article>
-                <article>
-                    <img src="image/icon/os.png">
-                    <h3>operational system</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
-                    <a href="pages/skills/os.html">lern more</a>
-                </article>
-            </section>
+        <section class="table">
+            <article>
+                <img src="image/icon/code.png">
+                <h3>web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
+                <a href="pages/skills/webdevelopment.html">lern more</a>
+            </article>
+            <article>
+                <img src="image/icon/language.png">
+                <h3>languages</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
+                <a href="pages/skills/language.html">lern more</a>
+            </article>
+            <article>
+                <img src="image/icon/os.png">
+                <h3>operational system</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
+                <a href="pages/skills/os.html">lern more</a>
+            </article>
         </section>
-        <section id="projects">
+        <article class="more_content" id="more_skills">
+            <article>
+                <img src="image/icon/os.png">
+                <h3>operational system</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque dolor consequatur ipsa fugit iure fu?</p>
+                <a href="pages/skills/os.html">lern more</a>
+            </article>
+        </article>
+        <div class="show" onclick="hide(2)">
+            <img src="image/icon/more.png" id="more">
+            <img src="image/icon/hide.png" id="hide">
+        </div>
+    </section>
+    <section id="projects">
         <h2>projects</h2>
             <section class="table">
                 <article>
@@ -99,7 +111,23 @@
                     <img src="image/projects/umsonhoumarealidade.jpg">
                     <a href="pages/projects/webtech.html">see more</a>
                 </article>
+                <article>
+                    <h3>um sonho uma realidade</h3>
+                    <img src="image/projects/umsonhoumarealidade.jpg">
+                    <a href="pages/projects/webtech.html">see more</a>
+                </article>
             </section>
+            <article class="more_content" id="more_projects">
+                <article>
+                    <h3>um sonho uma realidade</h3>
+                    <img src="image/projects/umsonhoumarealidade.jpg">
+                    <a href="pages/projects/webtech.html">see more</a>
+                </article>
+            </article>
+            <div class="show" onclick="hide(3)">
+                <img src="image/icon/more.png" id="more">
+                <img src="image/icon/hide.png" id="hide">
+            </div>
         </section>
     </main>
     <a  href="file/portfolio.pdf" download="file/portfolio.pdf" target="_blank" id="download"><img src="image//icon/download.png"></a>
@@ -123,7 +151,7 @@
         </section>
         <p>claudio bento dala &copy; 2025</p>
     </footer>
-    <script src="scripts/aboutme.js"></script>
+    <script src="scripts/hide.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
 </html>

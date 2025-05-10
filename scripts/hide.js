@@ -1,9 +1,17 @@
 let element = {
-    content: window.document.querySelector('article#more_content'),
+    content:'',
     hider: window.document.querySelector('img#hide'),
     more: window.document.querySelector('img#more')
 }
-function hide() {
+function hide(section) {
+    if (section == 1) {
+        element.content = window.document.querySelector('article#more_about')
+    } else if(section == 2) {
+        element.content = window.document.querySelector('article#more_skills')
+    } else if(section == 3){
+        element.content = window.document.querySelector('article#more_projects')
+    }
+
     if (element.content.style.display == 'none') {
         element.content.style.display = 'block'
         element.hider.style.display = 'block'
