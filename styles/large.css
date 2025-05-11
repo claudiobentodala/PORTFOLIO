@@ -55,7 +55,7 @@ main > section#introducion > img{
     margin: 0;
 }
 main > section#introducion > section > a{
-    padding: 17px;
+    padding: 12px;
     margin: 0;
     transition: .8s;
 }

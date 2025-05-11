@@ -47,10 +47,9 @@ main > section#introducion article#social > a > img{
 main > section#introducion > section >  a{
     align-content: center;
     margin: auto;
-    padding: 15px;
-    max-width: 140px;
+    width: 130px;
+    height: 40px;
     border-radius: 35px;
-    line-height: 50%;
     text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
@@ -114,16 +113,17 @@ main > section#skills > section.table > article > p,article#more_skills > articl
 main > section#skills > section.table > article > a,article#more_skills > article > a{
     background-color: var(--color_main);
     color: var(--color_second);
-}
-main > section#skills > section.table > article > p,main > section#skills > section.table > article > a,article#more_skills > article > a,article#more_skills > article > p{
-    font-size: 17px;
     text-align: center;
+}
+main > section#skills > section.table > article > p,article#more_skills > article > a,article#more_skills > article > p{
+    font-size: 17px;
 }
 
 /*PROJECTS*/
 main > section#projects > section.table,article#more_projects{
     display: flex;
     flex-flow: row wrap;
+    row-gap: 30px;
 }
 main > section#projects section.table >  article,article#more_projects > article{
     width: 400px;
