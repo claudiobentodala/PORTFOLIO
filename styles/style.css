@@ -86,7 +86,6 @@ main  section > div.show > img#hide{
 p.letter{
     margin-top: 10px;
     font-family: var(--font_second);
-    text-align: justify;
     font-weight: lighter;
     font-size: 18px;
     line-height: 25px;

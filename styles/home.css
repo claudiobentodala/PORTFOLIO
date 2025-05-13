@@ -61,7 +61,7 @@ main > section#introducion  a > p{
 }
 
 /*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
-main > section#about,section#skills,section#projects,section#contact,main > section#about > section{
+section#skills,section#projects,section#contact,main > section#about > section{
     margin-top: 25px;
     border-radius: 10px;
 }
@@ -81,7 +81,6 @@ main > section#about > section{
     background: var(--color_main);
     animation: pain 1.2s infinite;
 }
-
 /*SKILLS*/
 main > section#skills,article#more_skills{
     background: transparent;
@@ -91,6 +90,7 @@ main > section#skills > section.table,article#more_skills{
     flex-flow: row wrap;
     row-gap: 20px;
     justify-content: space-evenly;
+    text-align: center;
 }
 main > section#skills > section.table > article,article#more_skills > article{
     animation: ligth 1.2s infinite;
