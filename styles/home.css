@@ -59,6 +59,11 @@ main > section#introducion > section >  a{
 main > section#introducion  a > p{
     display: inline;
 }
+/*LINE*/
+main > hr{
+    margin: 15px 0;
+    animation: ligth .8s infinite;
+}
 
 /*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
 section#skills,section#projects,section#contact,main > section#about > section{
