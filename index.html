@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 500px)">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="years()">
     <header>
         <menu>
             <a href="index.html">claudio dala</a>
@@ -48,7 +48,7 @@
             <h2>about me</h2>
             <section>
                 <article id="description">
-                    <p class="letter">Hello, I am Cláudio Bento Dala, a young man passionate about technology and web development. I am 16 years old, born on April 23, 2009, in Luanda, Angola. My interest in technology started with a simple question: how is software created? Since then, my curiosity has driven me to explore the universe of programming, and each answer I find leads me to new questions and discoveries.</p>
+                    <p class="letter">Hello, I am Cláudio Bento Dala, a young man passionate about technology and web development. I am <span id="years_old">0</span> years old, born on April 23, 2009, in Luanda, Angola. My interest in technology started with a simple question: how is software created? Since then, my curiosity has driven me to explore the universe of programming, and each answer I find leads me to new questions and discoveries.</p>
                 </article>
                 <article class="more_content" id="more_about">
                     <p class="letter">Currently, I am a high school student at the Carmun Polytechnic Institute and I completed my basic education at the Fran Maio School Complex. Although my education is still in progress, I already work as a Front-End developer, creating websites for companies and local projects. I have one year of practical experience, during which I have been honing my skills and exploring modern technologies.</p>
@@ -116,5 +116,6 @@
     </footer>
     <script src="scripts/hide.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/years_old.js"></script>
 </body>
 </html>
