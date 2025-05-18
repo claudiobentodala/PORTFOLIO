@@ -13,7 +13,12 @@ function hide(section) {
     }
 
     if (element.content.style.display == 'none') {
-        element.content.style.display = 'block' // flex por natureza mais block por causa do ABOUT outros são flex
+        if (section == 1) {
+            element.content.style.display = 'block'
+            
+        } else {
+            element.content.style.display = 'flex'
+        }
         element.hider.style.display = 'block'
         element.more.style.display = 'none'
     } else {

@@ -87,10 +87,17 @@ main > section#about > section{
     animation: pain 1.2s infinite;
 }
 /*SKILLS*/
+article#more_skills{
+    display: none;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+}
 main > section#skills,article#more_skills{
     background: transparent;
 }
-main > section#skills > section.table,article#more_skills{
+main > section#skills > section.table{
     display: flex;
     flex-flow: row wrap;
     row-gap: 20px;
@@ -125,7 +132,12 @@ main > section#skills > section.table > article > p,article#more_skills > articl
 }
 
 /*PROJECTS*/
-main > section#projects > section.table,article#more_projects{
+article#more_projects{
+    display: none;
+    flex-flow: row wrap;
+    row-gap: 30px;
+}
+main > section#projects > section.table{
     display: flex;
     flex-flow: row wrap;
     row-gap: 30px;
