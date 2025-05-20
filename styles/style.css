@@ -87,7 +87,7 @@ p.letter{
     margin-top: 10px;
     font-family: var(--font_second);
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
 }
 /*PROJECT AND SKILLS*/
@@ -170,5 +170,5 @@ footer{
     background-color: var(--color_main);
 }
 footer > p{
-    font-size: 17px;
+    font-size: 13px;
 }
