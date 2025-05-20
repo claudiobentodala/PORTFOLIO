@@ -165,4 +165,14 @@ main > section#projects section.table > article > img,article#more_projects > ar
 }
 main > section#projects section.table > article > a,article#more_projects > article > a{
     text-align: center;
+
+}
+
+/*CONTACT*/
+main > section#contact{}
+main > section#contact > form{
+    border-radius: 15px;
+    padding: 12px;
+    background-color: var(--color_main);
+    animation: pain 1.2s infinite;
 }
