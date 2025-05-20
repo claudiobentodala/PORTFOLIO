@@ -112,22 +112,27 @@
         <section id="contact">
             <h2>contact me</h2>
             <form action="#">
-                <div>
-                    <label for="iname">name</label>
-                    <input type="text" name="name" id="iname">
-                </div>
-                <div>
-                    <label for="iemail">email</label>
-                    <input type="email" name="email" id="iemail">
-                </div>
-                <div>
-                    <label for="itel">telephone</label>
-                    <input type="tel" name="tel" id="itel">
-                </div>
-                <div>
-                    <label for="imessage">message</label>
-                    <textarea name="message" id="imessage" cols="30" rows="10"></textarea>
-                </div>
+                <section>
+                    <section>
+                        <div>
+                            <label for="iname">name</label>
+                            <input type="text" name="name" id="iname" placeholder="your name" required>
+                        </div>
+                        <div>
+                            <label for="iemail">email</label>
+                            <input type="email" name="email" id="iemail" placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label for="itel">telephone</label>
+                            <input type="tel" name="tel" id="itel" placeholder="phone number">
+                        </div>
+                    </section>
+                    <div>
+                        <label for="imessage">message</label>
+                        <textarea name="message" id="imessage" cols="30" rows="10" placeholder="leave a message"></textarea>
+                    </div>
+                </section>
+                <input type="submit" value="SEND">
             </form>
         </section>
     </main>

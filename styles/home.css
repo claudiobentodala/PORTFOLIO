@@ -169,10 +169,47 @@ main > section#projects section.table > article > a,article#more_projects > arti
 }
 
 /*CONTACT*/
-main > section#contact{}
 main > section#contact > form{
+    text-transform: uppercase;
+    font-family: var(--font_second);
+    margin: auto;
     border-radius: 15px;
     padding: 12px;
     background-color: var(--color_main);
     animation: pain 1.2s infinite;
+}
+main > section#contact > form > section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+main > section#contact > form > section > section{
+    align-self: center;
+}
+main > section#contact > form  div{
+    text-align: center;
+    margin-bottom: 5px;
+}
+main > section#contact > form  div > input:focus{
+}
+main > section#contact > form div > textarea{
+    display: block;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 190px;
+    min-height: 190px;
+    text-align: justify;
+}
+main > section#contact > form > input{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+}
+main > section#contact > form  div > input,main > section#contact > form > input,main > section#contact > form  div > textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: var(--color_ligth);
 }
