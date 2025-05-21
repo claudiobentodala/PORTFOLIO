@@ -190,7 +190,12 @@ main > section#contact > form  div{
     text-align: center;
     margin-bottom: 5px;
 }
-main > section#contact > form  div > input:focus{
+main > section#contact > form  div > label > img{
+    transform: translate(0,8px);
+}
+main > section#contact > form  div > input{
+    width: 250px;
+    height: 35px;
 }
 main > section#contact > form div > textarea{
     display: block;
@@ -199,17 +204,23 @@ main > section#contact > form div > textarea{
     max-height: 190px;
     min-height: 190px;
     text-align: justify;
+    font-size: 17px;
 }
-main > section#contact > form > input{
+main > section#contact > form > button{
     display: block;
     margin: auto;
     margin-top: 10px;
     width: 70px;
     height: 30px;
+    cursor: pointer;
 }
-main > section#contact > form  div > input,main > section#contact > form > input,main > section#contact > form  div > textarea{
+main > section#contact > form > button > img{
+    transform: translate(0,-5px);
+}
+main > section#contact > form  div > input,main > section#contact > form > button,main > section#contact > form  div > textarea{
     padding: 5px;
     border-radius: 5px;
     border: transparent;
     background-color: var(--color_ligth);
+    box-shadow: 2px 2px 10px #00000056;
 }
