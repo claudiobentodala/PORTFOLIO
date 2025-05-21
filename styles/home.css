@@ -28,9 +28,48 @@ main > section#introducion  article#text{
     text-align: center;
     color: var(--color_ligth);
 }
+/* WRITING*/
 main > section#introducion  article#text > h3 > span{
-    font-weight: bolder;
-    font-size: 18px;
+    position: relative;
+}
+main > section#introducion  article#text > h3 > span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--color_main);
+    right: -5px;
+    animation: cursor .85s infinite, letter 20s steps(12) infinite;
+    width: calc(100% + 13px);
+    background-color: var(--color_second);
+}
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--color_second);
+    }
+}
+@keyframes letter {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+         width: calc(100% + 13px);
+    }
+}
+main > section#introducion  article#text > h3 > span::before{
+    content: "";
+    color: var(--color_main);
+    animation: words 10s infinite;
+}
+@keyframes words {
+    0%,33%{
+        content: "web developer";
+    }
+    34%,66%{
+        content: "grafhic design";
+    }
+    67%,100%{
+        content: "student";
+    }
 }
 main > section#introducion  article#social{
     display: flex;
