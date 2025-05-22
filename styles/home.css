@@ -157,7 +157,6 @@ main > section#skills > section.table > article,article#more_skills > article{
     animation: ligth 1.2s infinite;
     background-color: transparent;
     width: 280px;
-    cursor: pointer;
 }
 main > section#skills > section.table > article > img,article#more_skills > article > img{
     display: block;

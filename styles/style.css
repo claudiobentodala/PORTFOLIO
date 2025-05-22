@@ -77,6 +77,7 @@ main > section  div.show{
 main  section > div.show > img{
     display: block;
     margin: auto;
+    cursor: pointer;
 }
 main  section > div.show > img#hide{
     display: none;
