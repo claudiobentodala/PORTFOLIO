@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+:root{
+    --color_main: purple;
+    --color_second: #270027;
+    --color_third: #180018;
+    --color_fouth: #ea33f7;
+    --color_ligth: #fdbcfd;
+    --font_main: monospace;
+    --font_second: 'Arial Narrow', Arial, sans-serif;
+}
+
 /*INTRODUÇÃO*/
 main{
     padding-top: 8em;
@@ -251,10 +261,17 @@ main > section#contact > form > button{
     margin-top: 10px;
     width: 70px;
     height: 30px;
+    transition: .8s;
     cursor: pointer;
+}
+main > section#contact > form > button:hover{
+    scale: 90%;
 }
 main > section#contact > form > button > img{
     transform: translate(0,-5px);
+}
+main > section#contact > form  div > input:focus,main > section#contact > form  div > textarea:focus{
+    outline: 2px solid #fa4563;
 }
 main > section#contact > form  div > input,main > section#contact > form > button,main > section#contact > form  div > textarea{
     padding: 5px;
