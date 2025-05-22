@@ -38,7 +38,7 @@ main > section#introducion  article#text > h3 > span::after{
     height: 100%;
     border-left: 2px solid var(--color_main);
     right: -5px;
-    animation: cursor .85s infinite, letter 20s steps(12) infinite;
+    animation: cursor 20s infinite, letter 20s steps(12) infinite;
     width: calc(100% + 13px);
     background-color: var(--color_second);
 }
@@ -58,16 +58,16 @@ main > section#introducion  article#text > h3 > span::after{
 main > section#introducion  article#text > h3 > span::before{
     content: "";
     color: var(--color_main);
-    animation: words 10s infinite;
+    animation: words 13.3s infinite;
 }
 @keyframes words {
-    0%,33%{
+    0%,29%{
         content: "web developer";
     }
-    34%,66%{
+    30%,69%{
         content: "grafhic design";
     }
-    67%,100%{
+    70%,100%{
         content: "student";
     }
 }
