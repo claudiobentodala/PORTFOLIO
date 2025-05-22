@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+:root{
+    --color_main: purple;
+    --color_second: #270027;
+    --color_third: #180018;
+    --color_fouth: #ea33f7;
+    --color_ligth: #fdbcfd;
+    --font_main: monospace;
+    --font_second: 'Arial Narrow', Arial, sans-serif;
+}
+
 header{
     padding: 12px;
 }
@@ -11,16 +21,78 @@ main{
     margin-bottom: 10px;
 }
 main > h2{
+    margin-top: 80px;
     color: var(--color_main);
     margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
 }
-main > img{
-    display: block;
+main > section.img{
+    background-color: white;
     margin: auto;
-    width: 250px;
-    border-radius: 5px;
+    max-width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    background: transparent;
+}
+main > section > section#img{
+    width: 100%;height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: transition 20s infinite;
+}
+@keyframes transition {
+    0%,100%{
+        background-image: url(../image/projects/umsonhoumarealidade/1.jpg);
+    }
+    15%{
+        background-image: url(../image/projects/umsonhoumarealidade/1.jpg);
+    }
+    35%{
+        background-image: url(../image/projects/umsonhoumarealidade/2.jpg);
+    }
+    50%{
+        background-image: url(../image/projects/umsonhoumarealidade/3.jpg);
+    }
+    60%{
+        background-image: url(../image/projects/umsonhoumarealidade/4.jpg);
+    }
+    70%{
+        background-image: url(../image/projects/umsonhoumarealidade/5.jpg);
+        
+    }
+    80%{
+        background-image: url(../image/projects/umsonhoumarealidade/6.jpg);
+    }
+    90%{
+        background-image: url(../image/projects/umsonhoumarealidade/7.jpg);
+    }
+}
+main > div{
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--color_main);
+    width: 100px;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+main > div > div{
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color_ligth);
+    animation: move 20s infinite;
+}
+@keyframes move {
+    0%,100%{
+        transform: translate(0);
+    }
+    99%{
+        transform: translate(88px);
+    }
 }
 main > a{
     margin: auto;
