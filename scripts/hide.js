@@ -15,7 +15,6 @@ function hide(section) {
     if (element.content.style.display == 'none') {
         if (section == 1) {
             element.content.style.display = 'block'
-            
         } else {
             element.content.style.display = 'flex'
         }
