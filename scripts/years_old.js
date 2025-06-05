@@ -1,6 +1,6 @@
 let years_old = {
     year_born: 2009,
-    month_born: 3,
+    month_born: 11,
 }
 let years_now = {
     year: new Date().getFullYear(),
@@ -13,6 +13,6 @@ function years(){
     if (years_old.month_born <= years_now.month){
         output.years_old.innerHTML = years_now.year - years_old.year_born 
     } else {
-        output.years_old.innerHTML = -1 * (1 - (years_now.year - years_old.year_born )) 
+        output.years_old.innerHTML = (years_now.year - years_old.year_born ) - 1
     }
 }
