@@ -11,7 +11,6 @@ This repository contains my personal portfolio hosted on **GitHub Pages**, with 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **React.js**
 - **Git & GitHub**
 - **Responsive Design (Mobile First)**
 
