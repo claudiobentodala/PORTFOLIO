@@ -16,6 +16,10 @@
     --font_second: 'Arial Narrow', Arial, sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
