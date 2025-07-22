@@ -1,86 +1,80 @@
-@charset "UTF-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    --color_main: purple;
-    --color_second: #270027;
-    --color_third: #180018;
-    --color_fouth: #ea33f7;
-    --color_ligth: #fdbcfd;
-    --font_main: monospace;
-    --font_second: 'Arial Narrow', Arial, sans-serif;
-}
+@import url(main.css);
 
 body{
     color: white;
     font-family: var(--font_main);
     background-color: var(--color_second);
 }
-a{
-    text-decoration: none;
-}
 
 header{
-    position: fixed;
-    top: 0%;
-    width: 100vw;
-    background-color: var(--color_main);
-}
-header > menu{
-    padding: 15px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-header > menu > a{
-    font-size: 17px;
-    color: var(--color_ligth);
-    text-transform: uppercase;
-}
-header > menu > div{
-    display: block;
-    padding: 5px 12px 5px 50px;
-    margin-right: -15px;
-}
-header > menu > div > img#close{
-    display: none;   
-}
-header > nav {
-    display: none;
-    flex-flow: column wrap;
-    padding: 10px 0px;
-    background-color: var(--color_third);
-    box-shadow: 0px 5px 5px 0px var(--color_main);
-}
-header > nav > a{
-    padding: 10px 0px 10px 5px;
-    margin-left: 10px;
-    font-size: 17px;
-    width: 30%;
-    text-align: center;
-    color: var(--color_ligth);
-    border-bottom: 2px solid var(--color_fouth);
+    &{
+        position: fixed;
+        top: 0%;
+        width: 100vw;
+        background-color: var(--color_main);
+        z-index: 1;
+    }
+    & menu{
+        &{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        & a{
+            font-size: 15px;
+            color: var(--color_ligth);
+            text-transform: uppercase;
+        }
+        & div{
+            &{
+                display: block;
+                padding: 5px 12px 5px 50px;
+                margin-right: -15px;
+            }
+            & img#close{
+                display: none;   
+            }
+        }
+    }
+    & nav {
+        &{
+            display: none;
+            flex-flow: column nowrap;
+            align-items: center;
+            background-color: var(--color_third);
+        }
+        &.showNav{
+            display: flex;
+        }
+        & a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 23px;
+            text-align: center;
+            color: var(--color_ligth);
+        }
+    }
 }
 
 /*HIDE AND MORE*/
-main article.more_content{
-    display: none;
-}
-main > section  div.show{
-    width: 100%;
-    height: 35px;
-}
-main  section > div.show > img{
-    display: block;
-    margin: auto;
-    cursor: pointer;
-}
-main  section > div.show > img#hide{
-    display: none;
+main{
+    & article.more_content{
+        display: none;
+    }
+    & > section  div.show{
+        &{
+            width: 100%;
+            height: 35px;
+        }
+        & img{
+            display: block;
+            margin: auto;
+            cursor: pointer;
+        }
+        & img#hide{
+            display: none;
+        }
+    }
 }
 
 /* ALL DESCRIPTION TEXT*/
@@ -121,18 +115,20 @@ section.table > article,article#more_skills > article,article#more_projects > ar
     border-radius: 15px;
 }
 article > a.link_section{
-    margin: auto;
-    display: block;
-    padding: 8px 5px;
-    width: 100px;
-    margin-top: 5px;
-    border-radius: 15px;
-    color: var(--color_ligth);
-    background-color: var(--color_second);
-    transition: .5s;
-}
-article > a.link_section:hover{
-    transform: translate(3px);
+    &{
+        margin: auto;
+        display: block;
+        padding: 8px 5px;
+        width: 100px;
+        margin-top: 5px;
+        border-radius: 15px;
+        color: var(--color_ligth);
+        background-color: var(--color_second);
+        transition: .5s;
+    }
+    &:hover{
+        transform: translate(3px);
+    }
 }
 
 /*LIGTH*/
@@ -147,29 +143,33 @@ article > a.link_section:hover{
 
 /*DOWNLOAD*/
 a#download{
-    display: block;
-    position: fixed;
-    top: 91%;
-    left: 83%;
-    width: 50px;height: 50px;
-    border-radius: 50%;
-    background-color: var(--color_second);
-    box-shadow:0px 0px 20px 1px var(--color_main);
-    text-align: initial;
-}
-a#download > img{
-    transform: translate(50%,50%);
+    &{
+        display: block;
+        position: fixed;
+        top: 91%;
+        left: 83%;
+        width: 50px;height: 50px;
+        border-radius: 50%;
+        background-color: var(--color_second);
+        box-shadow:0px 0px 20px 1px var(--color_main);
+        text-align: initial;
+    }
+    & img{
+        transform: translate(50%,50%);
+    }
 }
 /*FOOTER*/
 footer{
-    padding: 10px;
-    margin-top: 30px;
-    font-family: var(--font_main);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color_ligth);
-    background-color: var(--color_main);
-}
-footer > p{
-    font-size: 13px;
+    &{
+        padding: 10px;
+        margin-top: 30px;
+        font-family: var(--font_main);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color_ligth);
+        background-color: var(--color_main);
+    }
+    & p{
+        font-size: 13px;
+    }
 }

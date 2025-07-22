@@ -1,147 +1,128 @@
-@charset "UTF-8";
+@import url(main.css);
 
-:root{
-    --color_main: purple;
-    --color_second: #270027;
-    --color_third: #180018;
-    --color_fouth: #ea33f7;
-    --color_ligth: #fdbcfd;
-    --font_main: monospace;
-    --font_second: 'Arial Narrow', Arial, sans-serif;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 /*INTRODUÇÃO*/
 main{
-    padding-top: 8em;
-}
-main > section#introducion{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-main > section#introducion > section{
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-main > section#introducion > img{
-    display: block;
-    margin: auto;
-    border: 2px solid var(--color_main);
-    border-radius: 50%;
-    animation: pain 1.5s infinite;
-}
-main > section#introducion  article#text{
-    margin-top: 10px;
-    text-align: center;
-    color: var(--color_ligth);
-}
-/* WRITING*/
-main > section#introducion  article#text > h3 > span{
-    position: relative;
-}
-main > section#introducion  article#text > h3 > span::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    border-left: 2px solid var(--color_main);
-    right: -5px;
-    animation: cursor 20s infinite, letter 20s steps(12) infinite;
-    width: calc(100% + 13px);
-    background-color: var(--color_second);
-}
-@keyframes cursor {
-    0%{
-        border-left: 2px solid var(--color_second);
+    &{
+        padding-top: 8em;
     }
-}
-@keyframes letter {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
+    & section#introducion{
+        &{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        & a > p{
+            display: inline;
+        }
+        & section{
+            margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        & img{
+            display: block;
+            margin: auto;
+            border: 2px solid var(--color_main);
+            border-radius: 50%;
+            animation: pain 1.5s infinite;
+        }
+        & article#text{
+            &{
+                margin-top: 10px;
+                text-align: center;
+                color: var(--color_ligth);
+            }
+            & h3 > span{
+                &{
+                    position: relative;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    border-left: 3px solid var(--color_main);
+                    right: -5px;
+                    animation: letter 20s steps(12) infinite;
+                    width: calc(100% + 13px);
+                    background-color: var(--color_second);
+                }
+                &::before{
+                    content: "";
+                    color: var(--color_main);
+                    animation: words 13.3s infinite;
+                }
+            }
+        }
+        & article#social{
+            &{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                column-gap: 5px;
+                margin: 20px 0;
+            }
+            & a > img{
+                width: 30px;
+                height: 30px;
+                margin: 5px 0px;
+                border-radius: 50%;
+            }
+        }
+        & section >  a{
+            align-content: center;
+            margin: auto;
+            width: 130px;
+            height: 40px;
+            border-radius: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: var(--color_second);
+            background-color: var(--color_main);
+        }
     }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-         width: calc(100% + 13px);
+    & hr{
+        margin: 15px 0;
+        animation: ligth .8s infinite;
     }
-}
-main > section#introducion  article#text > h3 > span::before{
-    content: "";
-    color: var(--color_main);
-    animation: words 13.3s infinite;
-}
-@keyframes words {
-    0%,29%{
-        content: "web developer";
+    & section{
+        &#skills,&#projects,&#contact,&#about,&#about > section{
+            &{
+                margin-top: 25px;
+                border-radius: 10px;
+            }
+            & h2 {
+                margin-bottom: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: var(--color_main);
+            }
+        }
+        &#about{
+            &{
+                color: var(--color_ligth);
+            }
+            & section{
+                padding: 15px;
+                background: var(--color_main);
+                animation: pain 1.2s infinite;
+            }
+        }
+        & article#more_skills{
+            display: none;
+            flex-flow: row wrap;
+            row-gap: 20px;
+            justify-content: space-evenly;
+            text-align: center;
+        }
     }
-    30%,69%{
-        content: "grafhic design";
-    }
-    70%,100%{
-        content: "student";
-    }
-}
-main > section#introducion  article#social{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    column-gap: 5px;
-}
-main > section#introducion article#social > a > img{
-    width: 30px;
-    height: 30px;
-    margin: 5px 0px;
-    border-radius: 50%;
-}
-main > section#introducion > section >  a{
-    align-content: center;
-    margin: auto;
-    width: 130px;
-    height: 40px;
-    border-radius: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: var(--color_second);
-    background-color: var(--color_main);
-}
-main > section#introducion  a > p{
-    display: inline;
-}
-/*LINE*/
-main > hr{
-    margin: 15px 0;
-    animation: ligth .8s infinite;
-}
-
-/*ABOUT ME, SKILLS, PROJECTS AND CONTACT*/
-section#skills,section#projects,section#contact,main > section#about > section{
-    margin-top: 25px;
-    border-radius: 10px;
-}
-main > section#about > h2,section#skills > h2,section#projects > h2, section#contact > h2 {
-    margin-bottom: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color_main);
-}
-
-/*ABOUT ME*/
-main > section#about{
-    color: var(--color_ligth);
-}
-main > section#about > section{
-    padding: 15px;
-    background: var(--color_main);
-    animation: pain 1.2s infinite;
-}
-/*SKILLS*/
-article#more_skills{
-    display: none;
-    flex-flow: row wrap;
-    row-gap: 20px;
-    justify-content: space-evenly;
-    text-align: center;
 }
 main > section#skills,article#more_skills{
     background: transparent;
@@ -213,7 +194,7 @@ main > section#projects section.table > article > img,article#more_projects > ar
 }
 main > section#projects section.table > article > a,article#more_projects > article > a{
     text-align: center;
-
+    
 }
 
 /*CONTACT*/
@@ -278,4 +259,23 @@ main > section#contact > form  div > input,main > section#contact > form > butto
     border: transparent;
     background-color: var(--color_ligth);
     box-shadow: 2px 2px 10px #00000056;
+}
+@keyframes letter {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+         width: calc(100% + 13px);
+    }
+}
+@keyframes words {
+    0%,29%{
+        content: "web developer";
+    }
+    30%,69%{
+        content: "grafhic design";
+    }
+    70%,100%{
+        content: "student";
+    }
 }

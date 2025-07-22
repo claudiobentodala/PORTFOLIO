@@ -1,14 +1,4 @@
-@charset "UTF-8";
-
-:root{
-    --color_main: purple;
-    --color_second: #270027;
-    --color_third: #180018;
-    --color_fouth: #ea33f7;
-    --color_ligth: #fdbcfd;
-    --font_main: monospace;
-    --font_second: 'Arial Narrow', Arial, sans-serif;
-}
+@import url(main.css);
 
 body{
     padding: 30px;
@@ -16,23 +6,31 @@ body{
 }
 
 section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 350px;
-    height: 350px;
-    font-family: var(--font_main);
-    text-transform: uppercase;
-    text-align: center;
-    background-color:  #8080803b;
-    color: var(--color_fouth);
-    border-radius: 5px;
-}
-section > a > img{
-    width: 200px;
-    transition: 1s;
-    animation: pain 2s infinite;
+    &{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 350px;
+        font-family: var(--font_main);
+        text-transform: uppercase;
+        text-align: center;
+        background-color:  #8080803b;
+        color: var(--color_fouth);
+        border-radius: 5px;
+    }
+    & a > img{
+        &{
+            width: 200px;
+            transition: 1s;
+            animation: pain 2s infinite;
+        }
+        &:hover{
+            animation: none;
+            scale: 95%;
+        }
+    }
 }
 @keyframes pain {
     0%,100%{
@@ -41,8 +39,4 @@ section > a > img{
     50%{
         scale: 105%;
     }
-}
-section > a > img:hover{
-    animation: none;
-    scale: 95%;
 }

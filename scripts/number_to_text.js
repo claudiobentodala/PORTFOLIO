@@ -1,3 +1,5 @@
+export{number_text}
+
 function number_text (number){
     if (number == 1) {
         return"one";
@@ -27,5 +29,3 @@ function number_text (number){
         return"thrteen";
     }
 }
-
-export{number_text}
