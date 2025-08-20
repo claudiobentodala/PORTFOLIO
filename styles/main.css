@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color_main: purple;
     --color_second: #270027;
     --color_third: #180018;
@@ -16,11 +16,11 @@
     --font_second: 'Arial Narrow', Arial, sans-serif;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-a{
+a {
     text-align: center;
     text-decoration: none;
 }

@@ -1,42 +1,48 @@
 @import url(main.css);
 
-body{
+body {
     padding: 30px;
     background-color: var(--color_second);
 }
 
-section{
-    &{
+section {
+    & {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 350px;
         height: 350px;
         font-family: var(--font_main);
         text-transform: uppercase;
         text-align: center;
-        background-color:  #8080803b;
+        background-color: #8080803b;
         color: var(--color_fouth);
         border-radius: 5px;
     }
-    & a > img{
-        &{
+
+    & a>img {
+        & {
             width: 200px;
             transition: 1s;
             animation: pain 2s infinite;
         }
-        &:hover{
+
+        &:hover {
             animation: none;
             scale: 95%;
         }
     }
 }
+
 @keyframes pain {
-    0%,100%{
+
+    0%,
+    100% {
         scale: 100%;
     }
-    50%{
+
+    50% {
         scale: 105%;
     }
 }
