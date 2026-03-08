@@ -28,7 +28,7 @@ This repository contains my personal portfolio hosted on **GitHub Pages**, with 
 
 ## 📷 Screenshot
 
-![Portfolio Screenshot](image/screenshot.png)
+![Portfolio Screenshot](./images/screenshot.png)
 
 ## 📌 Purpose
 
