@@ -180,3 +180,9 @@ function initTimeline() {
 
 // Initialize timeline when DOM is ready
 document.addEventListener('DOMContentLoaded', initTimeline);
+
+// Number of year from IT year carrer
+
+const numbersYearsCarrer = new Date().getFullYear() - 2023;
+
+document.querySelector("span#number-year-carrer").innerText = `${numbersYearsCarrer}+`;
