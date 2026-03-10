@@ -1586,6 +1586,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body{
+        width: 160vw;
+    }
     .nav-container {
         flex-direction: row;
         justify-content: space-between;
