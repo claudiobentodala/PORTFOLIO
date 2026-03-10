@@ -612,7 +612,7 @@ section {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-image: url('images/about-profile.jpg');
+    background-image: url('../images/about-profile.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
@@ -1293,15 +1293,15 @@ section {
 
 /* Specific portfolio images */
 .portfolio-image.ecommerce {
-    background-image: url('images/portfolio-ecommerce.jpg');
+    background-image: url('../images/portfolio-ecommerce.jpg');
 }
 
 .portfolio-image.analytics {
-    background-image: url('images/portfolio-analytics.jpg');
+    background-image: url('../images/portfolio-analytics.jpg');
 }
 
 .portfolio-image.ideia {
-    background-image: url('images/portfolio-ideia.jpg');
+    background-image: url('../images/portfolio-ideia.jpg');
 }
 
 .portfolio-content {
