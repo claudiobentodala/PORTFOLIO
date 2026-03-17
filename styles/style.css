@@ -1589,6 +1589,19 @@ footer {
     body{
         width: 160vw;
     }
+    .tag, .timeline-skill {
+        font-size: 1rem;
+    }
+    .about-text p, .about-card p, .skill-item p , .portfolio-description, .contact-info p  {
+        font-size: 1.4rem;
+    }
+    .normal-text, .section-subtitle, .timeline-description, .footer-copyright, .contact-info li{
+        font-size: 1.2em;
+    }
+    .timeline-filter {
+        font-size: 1.2em;
+    }
+
     .nav-container {
         flex-direction: row;
         justify-content: space-between;
