@@ -750,7 +750,7 @@ section {
 
 .skills-circle {
     position: relative;
-    width: 400px;
+    width: 200px;
     height: 400px;
     animation: rotate-slow 30s linear infinite;
 }
@@ -937,7 +937,7 @@ section {
 /* Timeline section */
 .timeline-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -1586,9 +1586,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body{
-        width: 160vw;
-    }
     .tag, .timeline-skill {
         font-size: 1rem;
     }
